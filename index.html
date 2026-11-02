@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mohamed Elnahas — HVAC Design Engineer</title>
+<meta name="description" content="HVAC Design Engineer: VRF, packaged and split systems, ventilation, smoke control, load calculations and shop drawings. Mechanical Power Engineer, Alexandria University 2025.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#11171F; --bg-alt:#0C1116; --line:#33455A; --line-faint:#22303F;
+    --copper:#C08355; --copper-dim:#8C6142;
+    --ink:#E7E4DA; --ink-dim:#8B95A1; --ink-faint:#5B6672;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth; scroll-padding-top:70px;}
+  body{margin:0; background:var(--bg); color:var(--ink); font-family:'Source Serif 4',Georgia,serif; font-size:17px; line-height:1.6; -webkit-font-smoothing:antialiased;}
+  h1,h2,h3,.nav a,.mono{font-family:'Space Grotesk','Segoe UI',Arial,sans-serif;}
+  a{color:inherit;}
+  ::selection{background:var(--copper-dim); color:#fff;}
+  :focus-visible{outline:2px solid var(--copper); outline-offset:3px;}
+  @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto;}}
+  .wrap{max-width:920px; margin:0 auto; padding:0 24px;}
+
+  header.top{position:sticky; top:0; z-index:10; background:rgba(17,23,31,.92); backdrop-filter:blur(6px); border-bottom:1px solid var(--line-faint);}
+  .top-inner{max-width:920px; margin:0 auto; padding:14px 24px; display:flex; align-items:center; justify-content:space-between; gap:20px;}
+  .mark{font-family:'Space Grotesk',sans-serif; font-weight:600; font-size:15px; white-space:nowrap;}
+  .mark span{color:var(--copper);}
+  .nav{display:flex; gap:18px; overflow-x:auto; scrollbar-width:none;}
+  .nav::-webkit-scrollbar{display:none;}
+  .nav a{font-size:13.5px; color:var(--ink-dim); text-decoration:none; white-space:nowrap;}
+  .nav a:hover{color:var(--ink);}
+
+  .hero{padding:64px 0 52px;}
+  .hero-grid{display:grid; grid-template-columns:1.3fr 1fr; gap:36px; align-items:center;}
+  @media (max-width:720px){.hero-grid{grid-template-columns:1fr;}}
+  .kicker{font-family:'Space Grotesk',sans-serif; font-size:13px; color:var(--copper); margin-bottom:14px;}
+  h1{font-size:clamp(34px,5.4vw,54px); line-height:1.06; margin:0 0 18px; font-weight:600; letter-spacing:-.01em;}
+  .lede{font-size:18px; color:var(--ink-dim); max-width:46ch; margin:0 0 26px;}
+  .contact-row{display:flex; flex-wrap:wrap; gap:10px 22px; font-family:'Space Grotesk',sans-serif; font-size:13.5px;}
+  .contact-row a,.contact-row span{color:var(--ink-dim); text-decoration:none; border-bottom:1px solid transparent;}
+  .contact-row a:hover{color:var(--copper); border-color:var(--copper);}
+
+  .profile{width:100%; max-width:300px; height:auto; justify-self:center; border:1px solid var(--line); padding:6px; background:var(--bg-alt);}
+  section{padding:52px 0;}
+  section + section{border-top:1px solid var(--line-faint);}
+  h2{font-size:24px; font-weight:600; margin:0 0 28px; letter-spacing:-.005em;}
+  h3{font-size:17px; font-weight:600; margin:0;}
+
+  .about-body{display:grid; grid-template-columns:1fr 230px; gap:40px;}
+  @media (max-width:720px){.about-body{grid-template-columns:1fr;}}
+  .about-body p{margin:0; max-width:64ch;}
+  .facts{margin:0; border-left:1px solid var(--line-faint); padding-left:18px; display:flex; flex-direction:column; gap:14px;}
+  .facts dt{font-family:'Space Grotesk',sans-serif; font-size:11.5px; color:var(--ink-faint);}
+  .facts dd{margin:2px 0 0; font-family:'Space Grotesk',sans-serif; font-size:14px;}
+
+  .project{padding:26px 0; border-top:1px solid var(--line-faint);}
+  .project:last-child{border-bottom:1px solid var(--line-faint);}
+  .project-head{display:flex; justify-content:space-between; gap:6px 16px; flex-wrap:wrap; align-items:baseline; margin-bottom:4px;}
+  .tag{font-family:'Space Grotesk',sans-serif; font-size:12.5px; color:var(--copper);}
+  .client{color:var(--ink-dim); font-size:15px; margin:0 0 10px;}
+  .project ul{margin:8px 0 0; padding-left:20px; color:var(--ink-dim);}
+  .project li{margin:5px 0;}
+  .project li strong{color:var(--ink); font-weight:500;}
+
+  .draw-grid{display:grid; gap:24px; margin-top:20px;}
+  .draw-grid figure{margin:0; border:1px solid var(--line-faint); background:var(--bg-alt);}
+  .draw-grid img{display:block; width:100%; height:auto;}
+  .draw-grid figcaption{padding:10px 14px; font-family:'Space Grotesk',sans-serif; font-size:12.5px; color:var(--ink-faint); border-top:1px solid var(--line-faint);}
+
+  .role{padding:22px 0; border-top:1px solid var(--line-faint);}
+  .role:last-child{border-bottom:1px solid var(--line-faint);}
+  .role-head{display:flex; justify-content:space-between; gap:6px 16px; flex-wrap:wrap; align-items:baseline;}
+  .role-title{font-family:'Space Grotesk',sans-serif; font-weight:600; font-size:16px;}
+  .role-org{color:var(--copper); font-family:'Space Grotesk',sans-serif; font-size:14px; margin-left:8px;}
+  .role-dates{font-family:'Space Grotesk',sans-serif; font-size:12.5px; color:var(--ink-faint); white-space:nowrap;}
+  .role ul{margin:8px 0 0; padding-left:20px; color:var(--ink-dim);}
+  .role li{margin:5px 0;}
+
+  .skill-groups{display:grid; grid-template-columns:repeat(3,1fr); gap:28px;}
+  @media (max-width:720px){.skill-groups{grid-template-columns:1fr;}}
+  .skill-groups h3{font-size:13px; color:var(--ink-faint); font-weight:500; margin-bottom:12px;}
+  .chips{display:flex; flex-wrap:wrap; gap:8px;}
+  .chip{font-family:'Space Grotesk',sans-serif; font-size:12.5px; border:1px solid var(--line); padding:5px 11px; border-radius:3px;}
+
+  .two-col{display:grid; grid-template-columns:1fr 1fr; gap:40px;}
+  @media (max-width:720px){.two-col{grid-template-columns:1fr;}}
+  .ed .deg{font-family:'Space Grotesk',sans-serif; font-weight:600; font-size:15px;}
+  .ed .meta{color:var(--ink-dim); font-size:14.5px;}
+  .lang-row{display:flex; justify-content:space-between; padding:10px 0; border-top:1px solid var(--line-faint); font-family:'Space Grotesk',sans-serif; font-size:14px;}
+  .lang-row span:last-child{color:var(--ink-faint);}
+
+  footer{padding:56px 0 60px; border-top:1px solid var(--line-faint);}
+  .cta{display:flex; justify-content:space-between; align-items:flex-end; gap:24px; flex-wrap:wrap;}
+  footer h2{max-width:16ch; margin:0;}
+  .cta-links{display:flex; flex-direction:column; gap:10px; font-family:'Space Grotesk',sans-serif;}
+  .cta-links a{font-size:15px; text-decoration:none; border-bottom:1px solid var(--line); padding-bottom:2px; width:max-content;}
+  .cta-links a:hover{color:var(--copper); border-color:var(--copper);}
+  .foot-note{margin-top:40px; color:var(--ink-faint); font-family:'Space Grotesk',sans-serif; font-size:12px;}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="top-inner">
+    <div class="mark">M<span>.</span>ELNAHAS</div>
+    <nav class="nav">
+      <a href="#about">Summary</a>
+      <a href="#projects">Projects</a>
+      <a href="#drawings">Drawings</a>
+      <a href="#experience">Experience</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <section class="hero" id="top">
+    <div class="hero-grid">
+      <div>
+        <div class="kicker">HVAC Design Engineer</div>
+        <h1>Mohamed Elnahas designs HVAC systems from load calculation to shop drawings.</h1>
+        <p class="lede">Mechanical Power Engineer (Alexandria University, 2025) with design experience on governmental projects: VRF, packaged and split systems, ventilation, fresh air and smoke control. Working knowledge of the Saudi Building Code.</p>
+        <div class="contact-row">
+          <a href="mailto:mhmadelnahas@gmail.com">mhmadelnahas@gmail.com</a>
+          <a href="tel:+201023716284">+20 102 371 6284</a>
+          <a href="https://www.linkedin.com/in/mhmad-elnahas-22251a425" target="_blank" rel="noopener">LinkedIn</a>
+          <span>Kom Hamada, Al Buhayrah, Egypt</span>
+        </div>
+      </div>
+      <img class="profile" src="images/profile.jpg" alt="Portrait of Mohamed Elnahas" width="280" height="350">
+    </div>
+  </section>
+
+  <section id="about">
+    <h2>Summary</h2>
+    <div class="about-body">
+      <p>I take HVAC projects from load calculation and equipment selection through duct and pipe sizing to finished shop drawings. My current work is on governmental projects, including a building with a BOQ value of EGP 30 million. I also spent a year maintaining industrial refrigeration plants, so I know how chillers, compressors, pumps and piping behave once they are installed. I'm looking for an HVAC Design Engineer role in a consultancy environment.</p>
+      <dl class="facts">
+        <div><dt>Based in</dt><dd>Kom Hamada, Egypt</dd></div>
+        <div><dt>Education</dt><dd>B.Sc. Mechanical Power Engineering, 2025</dd></div>
+        <div><dt>Codes</dt><dd>SBC, ASHRAE</dd></div>
+        <div><dt>Languages</dt><dd>Arabic, English</dd></div>
+      </dl>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+
+    <article class="project">
+      <div class="project-head"><h3>Aswan Hall</h3><span class="tag">Professional · BOQ EGP 30 million</span></div>
+      <p class="client">Mostakbal Misr Authority</p>
+      <ul>
+        <li>Designed the complete HVAC system for a <strong>72 TR building</strong> using fan coil units on a VRF system (2 outdoor units × 123 kW).</li>
+        <li>Designed a <strong>52 TR conference hall</strong> served by 3 packaged units of 17 TR each.</li>
+        <li>Designed the ventilation, fresh air and smoke extraction systems.</li>
+        <li>Prepared the complete shop drawings.</li>
+      </ul>
+    </article>
+
+    <article class="project">
+      <div class="project-head"><h3>Police &amp; Fire Station, Bab Sharq</h3><span class="tag">Professional</span></div>
+      <p class="client">Ministry of Interior</p>
+      <ul>
+        <li>Designed the complete HVAC system using split units.</li>
+        <li>Designed the ventilation system.</li>
+        <li>Handled the full design scope from start to finish.</li>
+      </ul>
+    </article>
+
+    <article class="project">
+      <div class="project-head"><h3>Administrative Building HVAC</h3><span class="tag">Academic · Revit model</span></div>
+      <p class="client">Complete HVAC design, modeled in Revit</p>
+      <ul>
+        <li>Calculated cooling and heating loads in HAP and selected air terminal units.</li>
+        <li>Specified an FCU for each room, then sized ducts and pipes (GPM-based) with sizing software.</li>
+        <li>Specified 2× air-cooled chillers (duty and standby) for redundancy.</li>
+        <li>Prepared shop drawings for the complete installation.</li>
+      </ul>
+    </article>
+
+    <article class="project">
+      <div class="project-head"><h3>Smart Office</h3><span class="tag">Training · EngX</span></div>
+      <p class="client">Roof chiller plant and ground floor duct distribution</p>
+      <ul>
+        <li>Drew and detailed the roof chiller plant, ground floor ductwork and equipment hookup sections. See the sheets below.</li>
+        <li>Software: Revit, AutoCAD, AutoFluid, Duct Sizer, Pipe Sizer.</li>
+      </ul>
+    </article>
+
+    <article class="project">
+      <div class="project-head"><h3>Augmented VAWT with Solar System</h3><span class="tag">Graduation project</span></div>
+      <p class="client">Alexandria University, 2024–2025</p>
+      <ul>
+        <li>Designed an augmented vertical axis wind turbine integrated with a PV system for high-rise urban buildings.</li>
+        <li>Used CFD to analyze aerodynamic enhancement devices.</li>
+        <li>Calculated solar potential, yield and loads in PVsyst and PVsol (tilt, shading, annual energy).</li>
+      </ul>
+    </article>
+  </section>
+
+  <section id="drawings">
+    <h2>Drawing sheets: Smart Office</h2>
+    <p style="margin:-12px 0 0; color:var(--ink-dim);">Training project (EngX) covering the roof chiller plant, ground floor distribution and equipment hookup details.</p>
+    <div class="draw-grid">
+      <figure>
+        <img src="images/smart-office-1.jpg" alt="Roof chiller plant layout with chiller, FAHU and pump hookup details" loading="lazy">
+        <figcaption>Roof floor: chiller plant layout, and chiller / AHU / pump hookup sections</figcaption>
+      </figure>
+      <figure>
+        <img src="images/smart-office-2.jpg" alt="Ground floor ductwork layout with diffuser plan and 3D duct and FCU views" loading="lazy">
+        <figcaption>Ground floor: ductwork plan with CFM and duct-size callouts, and 3D coordination views</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section id="experience">
+    <h2>Experience</h2>
+    <div class="role">
+      <div class="role-head"><div><span class="role-title">HVAC Design Engineer</span><span class="role-org">Top</span></div><span class="role-dates">08/2026 – Present</span></div>
+      <ul><li>Design VRF, packaged and split systems for governmental projects, including ventilation, fresh air and smoke control, and produce shop drawings.</li></ul>
+    </div>
+    <div class="role">
+      <div class="role-head"><div><span class="role-title">Mechanical Maintenance Engineer</span><span class="role-org">Alexander Fresh</span></div><span class="role-dates">07/2025 – 08/2026</span></div>
+      <ul>
+        <li>Maintained and troubleshot industrial refrigeration and utility systems: compressors, pumps and piping networks.</li>
+        <li>Ran routine, preventive and emergency maintenance to minimize downtime.</li>
+        <li>Optimized screw compressors, evaporators, condensers and pumping units.</li>
+      </ul>
+    </div>
+    <div class="role">
+      <div class="role-head"><div><span class="role-title">Mechanical Engineering Intern</span><span class="role-org">Alnahas Refrigeration &amp; Crop Freezing Co.</span></div><span class="role-dates">07/2025 – 08/2025</span></div>
+      <ul><li>Worked with refrigeration cycles, screw compressors, evaporators and condensers; assisted with troubleshooting and repair of high-pressure cooling and piping equipment.</li></ul>
+    </div>
+    <div class="role">
+      <div class="role-head"><div><span class="role-title">Internships</span><span class="role-org">Power, metals and food production</span></div><span class="role-dates">2023 – 2024</span></div>
+      <ul>
+        <li>Middle Delta Electricity Production Co.: turbines, large centrifugal pumps, heat exchangers and piping.</li>
+        <li>Egyptian Copper Works: smelting furnaces, rolling mills and shaping presses.</li>
+        <li>Edible Oil Processing Company: maintenance of agitators, pumps, filters and filling lines.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skill-groups">
+      <div><h3>HVAC design</h3><div class="chips"><span class="chip">Load calculations</span><span class="chip">VRF</span><span class="chip">Packaged units</span><span class="chip">Split units</span><span class="chip">FCU</span><span class="chip">Air-cooled chillers</span><span class="chip">Duct &amp; pipe sizing</span><span class="chip">Ventilation</span><span class="chip">Smoke control</span><span class="chip">Shop drawings</span></div></div>
+      <div><h3>Software</h3><div class="chips"><span class="chip">HAP</span><span class="chip">Revit (BIM)</span><span class="chip">AutoCAD</span><span class="chip">AutoFluid</span><span class="chip">Duct Sizer</span><span class="chip">Pipe Sizer</span><span class="chip">SolidWorks</span><span class="chip">PVsyst</span><span class="chip">PVsol</span></div></div>
+      <div><h3>Codes and other</h3><div class="chips"><span class="chip">Saudi Building Code (SBC)</span><span class="chip">ASHRAE</span><span class="chip">Industrial refrigeration</span><span class="chip">Screw compressors</span><span class="chip">MEP coordination</span><span class="chip">CFD</span></div></div>
+    </div>
+  </section>
+
+  <section id="education">
+    <div class="two-col">
+      <div>
+        <h2>Education</h2>
+        <div class="ed">
+          <div class="deg">B.Sc. Mechanical Power Engineering</div>
+          <div class="meta">Faculty of Engineering, Alexandria University<br>09/2020 – 06/2025</div>
+        </div>
+        <div class="ed" style="margin-top:16px;">
+          <div class="deg">Revit &amp; HVAC Design Course</div>
+          <div class="meta">EngX Platform</div>
+        </div>
+      </div>
+      <div>
+        <h2>Languages</h2>
+        <div class="lang-row"><span>Arabic</span><span>Native</span></div>
+        <div class="lang-row"><span>English</span><span>Proficient / Fluent</span></div>
+      </div>
+    </div>
+  </section>
+
+  <footer id="contact">
+    <div class="cta">
+      <h2>Let's talk about your next HVAC design.</h2>
+      <div class="cta-links">
+        <a href="mailto:mhmadelnahas@gmail.com">mhmadelnahas@gmail.com</a>
+        <a href="tel:+201023716284">+20 102 371 6284</a>
+        <a href="tel:+201503389822">+20 150 338 9822</a>
+        <a href="https://www.linkedin.com/in/mhmad-elnahas-22251a425" target="_blank" rel="noopener">linkedin.com/in/mhmad-elnahas</a>
+      </div>
+    </div>
+    <div class="foot-note">Kom Hamada, Al Buhayrah, Egypt</div>
+  </footer>
+
+</main>
+</body>
+</html>

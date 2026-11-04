@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Mohamed Elnahas — HVAC Design Engineer</title>
-<meta name="description" content="HVAC Design Engineer: VRF, packaged and split systems, ventilation, smoke control, load calculations and shop drawings. Mechanical Power Engineer, Alexandria University 2025.">
+<title>Mohamed Elnahas — Freelance HVAC Design Engineer</title>
+<meta name="description" content="Freelance HVAC design engineer: load calculations, VRF, packaged and split systems, ventilation, smoke control and shop drawings. Remote delivery, Revit and AutoCAD.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600&display=swap" rel="stylesheet">
@@ -43,6 +43,22 @@
   .contact-row a,.contact-row span{color:var(--ink-dim); text-decoration:none; border-bottom:1px solid transparent;}
   .contact-row a:hover{color:var(--copper); border-color:var(--copper);}
 
+  .btns{display:flex; flex-wrap:wrap; gap:12px; margin:0 0 24px;}
+  .btn{font-family:'Space Grotesk',sans-serif; font-size:14.5px; font-weight:500; text-decoration:none; padding:11px 20px; border:1px solid var(--line); border-radius:3px; color:var(--ink);}
+  .btn:hover{border-color:var(--copper); color:var(--copper);}
+  .btn.primary{background:var(--copper); border-color:var(--copper); color:#11171F;}
+  .btn.primary:hover{background:#d19367; color:#11171F;}
+  .svc-grid{display:grid; grid-template-columns:repeat(2,1fr); gap:18px;}
+  @media (max-width:720px){.svc-grid{grid-template-columns:1fr;}}
+  .svc{border:1px solid var(--line-faint); background:var(--bg-alt); padding:20px;}
+  .svc h3{margin-bottom:8px;}
+  .svc p{margin:0; color:var(--ink-dim); font-size:15.5px;}
+  .steps{counter-reset:s; list-style:none; margin:0; padding:0; display:grid; gap:0;}
+  .steps li{counter-increment:s; padding:18px 0 18px 54px; border-top:1px solid var(--line-faint); position:relative; color:var(--ink-dim);}
+  .steps li:last-child{border-bottom:1px solid var(--line-faint);}
+  .steps li::before{content:counter(s,decimal-leading-zero); position:absolute; left:0; top:18px; font-family:'Space Grotesk',sans-serif; color:var(--copper); font-size:15px;}
+  .steps strong{display:block; color:var(--ink); font-family:'Space Grotesk',sans-serif; font-weight:600; margin-bottom:2px;}
+  .profile{object-fit:cover; aspect-ratio:4/5;}
   .profile{width:100%; max-width:300px; height:auto; justify-self:center; border:1px solid var(--line); padding:6px; background:var(--bg-alt);}
   section{padding:52px 0;}
   section + section{border-top:1px solid var(--line-faint);}
@@ -107,9 +123,11 @@
   <div class="top-inner">
     <div class="mark">M<span>.</span>ELNAHAS</div>
     <nav class="nav">
-      <a href="#about">Summary</a>
+      <a href="#services">Services</a>
+      <a href="#process">Process</a>
+      <a href="#about">About</a>
       <a href="#projects">Projects</a>
-      <a href="#drawings">Drawings</a>
+      <a href="#drawings">Sample drawings</a>
       <a href="#experience">Experience</a>
       <a href="#skills">Skills</a>
       <a href="#contact">Contact</a>
@@ -122,9 +140,10 @@
   <section class="hero" id="top">
     <div class="hero-grid">
       <div>
-        <div class="kicker">HVAC Design Engineer</div>
-        <h1>Mohamed Elnahas designs HVAC systems from load calculation to shop drawings.</h1>
-        <p class="lede">Mechanical Power Engineer (Alexandria University, 2025) with design experience on governmental projects: VRF, packaged and split systems, ventilation, fresh air and smoke control. Working knowledge of the Saudi Building Code.</p>
+        <div class="kicker">Freelance HVAC Design Engineer · Available for projects</div>
+        <h1>HVAC design for your project: calculated, coordinated and drawn.</h1>
+        <p class="lede">I design VRF, packaged and split systems, ventilation and smoke control for villas, offices and commercial buildings. You send the architectural drawings, I deliver load calculations, equipment selection and shop drawings ready for tender or site.</p>
+        <div class="btns"><a class="btn primary" href="https://wa.me/201023716284?text=Hello%20Mohamed%2C%20I%20have%20an%20HVAC%20design%20project%20and%20would%20like%20a%20quote." target="_blank" rel="noopener">Get a quote on WhatsApp</a><a class="btn" href="mailto:mhmadelnahas@gmail.com?subject=HVAC%20design%20inquiry">Send an email</a></div>
         <div class="contact-row">
           <a href="mailto:mhmadelnahas@gmail.com">mhmadelnahas@gmail.com</a>
           <a href="tel:+201023716284">+20 102 371 6284</a>
@@ -136,10 +155,32 @@
     </div>
   </section>
 
+  <section id="services">
+    <h2>Services</h2>
+    <div class="svc-grid">
+      <div class="svc"><h3>Cooling &amp; heating load calculations</h3><p>Room-by-room loads in HAP, following ASHRAE and SBC, as the basis for correct equipment sizing.</p></div>
+      <div class="svc"><h3>System design &amp; equipment selection</h3><p>VRF, packaged, split, FCU and air-cooled chiller systems, selected for your building, budget and climate.</p></div>
+      <div class="svc"><h3>Ventilation, fresh air &amp; smoke control</h3><p>Duct and pipe sizing, fresh air rates, toilet and kitchen exhaust, and smoke extraction layouts.</p></div>
+      <div class="svc"><h3>Shop drawings &amp; BIM</h3><p>Coordinated drawings in Revit and AutoCAD: plans, sections, equipment hookups and schedules.</p></div>
+    </div>
+    <p style="margin:22px 0 0; color:var(--ink-dim); font-size:15.5px;">Also available: review of an existing HVAC design, BOQ quantities, and revisions to consultant comments.</p>
+  </section>
+
+  <section id="process">
+    <h2>How we work together</h2>
+    <ol class="steps">
+      <li><strong>You send the project files</strong>Architectural plans (DWG or PDF), building use, location and any client requirements.</li>
+      <li><strong>Scope, price and deadline</strong>A clear written quote and delivery date before any work starts.</li>
+      <li><strong>Calculations and first draft</strong>Load calculations, system choice and a first set of drawings for your review.</li>
+      <li><strong>Revisions and final delivery</strong>Comments incorporated, then final drawings, calculations and schedules delivered in the formats you need.</li>
+    </ol>
+  </section>
+
+
   <section id="about">
     <h2>Summary</h2>
     <div class="about-body">
-      <p>I take HVAC projects from load calculation and equipment selection through duct and pipe sizing to finished shop drawings. My current work is on governmental projects, including a building with a BOQ value of EGP 30 million. I also spent a year maintaining industrial refrigeration plants, so I know how chillers, compressors, pumps and piping behave once they are installed. I'm looking for an HVAC Design Engineer role in a consultancy environment.</p>
+      <p>I take HVAC projects from load calculation and equipment selection through duct and pipe sizing to finished shop drawings. My current work is on governmental projects, including a building with a BOQ value of EGP 30 million. I also spent a year maintaining industrial refrigeration plants, so I know how chillers, compressors, pumps and piping behave once they are installed. I now take on freelance HVAC design work alongside my full-time role, with remote delivery and clear deadlines.</p>
       <dl class="facts">
         <div><dt>Based in</dt><dd>Kom Hamada, Egypt</dd></div>
         <div><dt>Education</dt><dd>B.Sc. Mechanical Power Engineering, 2025</dd></div>
@@ -209,11 +250,11 @@
     <p style="margin:-12px 0 0; color:var(--ink-dim);">Training project (EngX) covering the roof chiller plant, ground floor distribution and equipment hookup details.</p>
     <div class="draw-grid">
       <figure>
-        <img src="images/smart-office-1.jpg" alt="Roof chiller plant layout with chiller, FAHU and pump hookup details" loading="lazy">
+        <a href="images/smart-office-1.jpeg" target="_blank" rel="noopener"><img src="images/smart-office-1.jpeg" alt="Roof chiller plant layout with chiller, FAHU and pump hookup details" loading="lazy"></a>
         <figcaption>Roof floor: chiller plant layout, and chiller / AHU / pump hookup sections</figcaption>
       </figure>
       <figure>
-        <img src="images/smart-office-2.jpg" alt="Ground floor ductwork layout with diffuser plan and 3D duct and FCU views" loading="lazy">
+        <a href="images/smart-office-2.jpeg" target="_blank" rel="noopener"><img src="images/smart-office-2.jpeg" alt="Ground floor ductwork layout with diffuser plan and 3D duct and FCU views" loading="lazy"></a>
         <figcaption>Ground floor: ductwork plan with CFM and duct-size callouts, and 3D coordination views</figcaption>
       </figure>
     </div>
@@ -279,8 +320,9 @@
 
   <footer id="contact">
     <div class="cta">
-      <h2>Let's talk about your next HVAC design.</h2>
+      <h2>Have a project? Send me the drawings.</h2>
       <div class="cta-links">
+        <a href="https://wa.me/201023716284?text=Hello%20Mohamed%2C%20I%20have%20an%20HVAC%20design%20project%20and%20would%20like%20a%20quote." target="_blank" rel="noopener">WhatsApp: +20 102 371 6284</a>
         <a href="mailto:mhmadelnahas@gmail.com">mhmadelnahas@gmail.com</a>
         <a href="tel:+201023716284">+20 102 371 6284</a>
         <a href="tel:+201503389822">+20 150 338 9822</a>
